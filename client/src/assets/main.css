@@ -1,35 +1,25 @@
 @import './base.css';
 
 #app {
-  max-width: 1280px;
+  max-width: 900px;
   margin: 0 auto;
-  padding: 2rem;
-
-  font-weight: normal;
 }
 
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
+button {
+    background: var(--clr-background-button);
+    color: var(--clr-text-button);
+    border: none;
+    outline: none;
+    border-radius: .75rem;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    cursor: pointer;
 }
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
-}
-
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
-
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
+@font-face {
+  font-family: "Virgil";
+  font-weight: 400;
+  font-style: normal;
+  font-display: auto;
+  src: local("Virgil"), url("fonts/Virgil/Virgil.woff2") format("woff2");
 }

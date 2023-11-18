@@ -19,10 +19,25 @@
   --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
   --vt-c-text-dark-1: var(--vt-c-white);
   --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
+
+  --wt-c-white: #ffffff;
+  --wt-c-white-blue: #e7eefa;
+  --wt-c-green-black: #232c3b;
+  --wt-c-light-gray: #f5f7fb;
+  --wt-c-green-black-light: #8f9098;
+  --wt-c-blue: #5d7cfc;
+  --wt-c-red: #d9252e;
 }
 
 /* semantic color variables for this project */
 :root {
+  --clr-background: var(--wt-c-white-blue);
+  --clr-background-main: var(--wt-c-white);
+  --clr-background-table-header: var(--wt-c-light-gray);
+  --clr-table-header: var(--wt-c-green-black-light);
+  --clr-background-button: var(--wt-c-blue);
+  --clr-text-button: var(--wt-c-white); 
+
   --color-background: var(--vt-c-white);
   --color-background-soft: var(--vt-c-white-soft);
   --color-background-mute: var(--vt-c-white-mute);
@@ -36,7 +51,7 @@
   --section-gap: 160px;
 }
 
-@media (prefers-color-scheme: dark) {
+/*@media (prefers-color-scheme: dark) {
   :root {
     --color-background: var(--vt-c-black);
     --color-background-soft: var(--vt-c-black-soft);
@@ -49,6 +64,7 @@
     --color-text: var(--vt-c-text-dark-2);
   }
 }
+*/
 
 *,
 *::before,
@@ -67,6 +83,7 @@ body {
     background-color 0.5s;
   line-height: 1.6;
   font-family:
+    Virgil,
     Inter,
     -apple-system,
     BlinkMacSystemFont,
@@ -79,7 +96,6 @@ body {
     'Droid Sans',
     'Helvetica Neue',
     sans-serif;
-  font-size: 15px;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
