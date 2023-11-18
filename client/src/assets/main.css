@@ -5,6 +5,10 @@
   margin: 0 auto;
 }
 
+body {
+  background: var(--clr-background);
+}
+
 button {
     background: var(--clr-background-button);
     color: var(--clr-text-button);
@@ -14,6 +18,8 @@ button {
     padding: 0.5rem 1rem;
     margin: 0.5rem;
     cursor: pointer;
+    font-family: "Arial";
+    font-size: 1.3rem;
 }
 
 @font-face {

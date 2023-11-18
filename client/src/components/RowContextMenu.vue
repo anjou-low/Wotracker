@@ -66,9 +66,11 @@ function onMenuItemClick(actionName) {
 
 .context li {
     cursor: pointer;
+    border-radius: .4rem;
+    padding: .5rem;
 }
 
 .context li:hover {
-    background-color: gray;
+    background-color: #f8f9fa;
 }
 </style>
