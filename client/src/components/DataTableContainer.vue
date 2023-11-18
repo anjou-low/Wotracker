@@ -40,6 +40,17 @@ header {
     align-items: center;
 }
 
+@media screen and (max-width: 480px) {
+    header {
+        width: 100%;
+        margin-bottom: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 button {
     background: var(--clr-background-button);
     color: var(--clr-text-button);
