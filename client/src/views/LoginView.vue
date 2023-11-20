@@ -36,7 +36,7 @@ async function signup() {
 <template>
         <main>
         <input v-model="username" placeholder="Username">
-        <input v-model="password" placeholder="Password">
+        <input v-model="password" placeholder="Password" type="password" >
         <section>
             <button @click.stop="signup">Register</button>
             <button @click.stop="signin">Sign in</button>
