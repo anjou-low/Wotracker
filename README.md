@@ -1,4 +1,4 @@
-##About Wotracker
+## About Wotracker
 Wotracker is a minimalist web app I built to track my personal workouts as an alternative to Notes which was becoming quite hard to navigate. It was also a good excuse to learn more about web development.
 
 ![Homepage](/screenshots/home.png)
