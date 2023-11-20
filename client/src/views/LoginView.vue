@@ -4,8 +4,8 @@ import router from '../router'
 import { store } from '../store/store'
 import { api } from '../store/api'
 
-const username = ref('Test')
-const password = ref('prout')
+const username = ref(null)
+const password = ref(null)
 
 async function signin() {
     const response = await api.authenticate(username.value, password.value)
@@ -48,13 +48,22 @@ async function signup() {
 main {
     margin: 1rem;
     padding: 1.5rem;
-    background-color: red;
+    background-color: var(--clr-background-main);
     color: #232c3b;
     border-radius: 1.25rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+input {
+    height: 2rem;
+    width: 250px;
+    margin: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
 }
 
 section {

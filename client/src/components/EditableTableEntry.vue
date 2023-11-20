@@ -57,7 +57,6 @@ function onStopEditing() {
 }
 
 .editable-table-entry span:hover {
-    color: blue;
     cursor: text;
 }
 
